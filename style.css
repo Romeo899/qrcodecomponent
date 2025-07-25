@@ -1,6 +1,98 @@
 /* Mobile first design */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+html, body {
+
+}
+
+/* Reusable styles */
+
+:root {
+    /* colours */
+    --white: hsl(0, 0%, 100%);
+    --slate-300: rgb(213, 225, 239);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+
+    /* typography */
+    --text-preset-1: 700 20px/1.2 'Inter', sans-serif;
+    --text-preset-2: 500 15px/1.4 'Inter', sans-serif;
+    --default-letter-spacing: 0;
+    --special-letter-spacing: 0.2px;
+
+    /* spacing */
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+
+    
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--slate-300);
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    max-width: 320px;
+    max-height: 499px;
+    background-color: var(--white);
+    
+    padding: var(--spacing-200);
+    padding-bottom: var(--spacing-500); 
+    margin: auto var(--spacing-300);
+
+    border-radius: 1.3333rem;
+}
+
+
+.image {
+    width: 100%;
+    border-radius: 0.6666rem;
+    margin-bottom: var(--spacing-300);
+}
+
+.contentContainer {
+    width: 100%;
+    padding: 0 var(--spacing-200);
+    text-align: center;
+}
+
+.heading {
+    font: var(--text-preset-1);
+    color: var(--slate-900);
+    padding-bottom: var(--spacing-200);
+    letter-spacing: var(--default-letter-spacing)
+}
+
+.description {
+    font: var(--text-preset-2);
+    color: var(--slate-500);
+    letter-spacing: var(--special-letter-spacing);
+
+}
+
+/* attribution */
+.attribution {
+    display: none;
+}
+
+/* Tablet */
 @media (min-width: 768px) {
 
 
@@ -12,3 +104,5 @@
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 }
+
+/* Desktop */
